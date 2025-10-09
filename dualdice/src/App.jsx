@@ -6,7 +6,7 @@ function App() {
   //  const char = String.fromCodePoint(0x267f + 5);
   const [dice1, setDice1] = useState(1);
   const [dice2, setDice2] = useState(1);
-  const [heading,setHeading] = useState("player 1");
+  
   // Function to convert numbers to real dice faces
   const getDiceFace = (value) => String.fromCodePoint(0x2680 + (value - 1));
 
@@ -19,7 +19,7 @@ function App() {
       diceEls.forEach((el) => el.classList.remove("roll"));
       setDice1(Math.floor(Math.random() * 6) + 1);
       setDice2(Math.floor(Math.random() * 6) + 1);
-      setHeading("player 2");
+      
     }, 500);
   };
 
