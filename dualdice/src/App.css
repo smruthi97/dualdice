@@ -1,0 +1,168 @@
+.players { 
+  display: flex;
+  justify-content: space-between;
+  
+  padding-inline: 20%;
+  
+  color: white;
+  
+}
+.box {
+  
+  
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(52, 13, 228);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-inline: 20%;
+  margin-top: 2%;
+
+
+
+
+}
+.heading{
+  display:flex;
+  justify-content: space-between;
+  padding-inline: 44%;
+  color: white;
+  margin-bottom: 4%;
+}
+ .dice{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 35%;
+  /* margin-bottom: 35px; /* <-- adds space below dice  */
+
+
+}
+.dice1{
+  width:90px;
+  height:90px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  background: linear-gradient(180deg, white, white);
+  border:1px solid rgba(7, 121, 214, 0.03);
+  box-shadow: 0 6px 18px rgb(153, 151, 223);
+}
+.dice2{
+  width:90px;
+  height:90px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  background: linear-gradient(180deg, white, white);
+  border:1px solid rgba(7,121,214,0.03);
+  box-shadow: 0 6px 18px rgb(153,151,223);
+  
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 26%;
+  margin-top: 50px;
+}
+.button2{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 44%;
+  margin-top: 3%;
+}
+.but1{
+  background-color:rgb(33, 19, 226);
+  color: white;
+  display: inline-flex;         /* align content precisely */
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;           /* top/bottom, left/right */
+  min-width: 100px;            /* ensures width > height */
+  height: 40px;                /* fixed rectangular height */
+  box-sizing: border-box;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;  /* Rounded corners */
+  cursor: pointer;
+  transition: 0.3s;    /* Smooth hover effect */
+}
+
+.but1:hover {
+  background-color: #4925e9; /* Color change on hover */
+}
+.but2{
+  background-color:rgb(33, 19, 226);
+  color:white;
+  display: inline-flex;         /* align content precisely */
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;           /* top/bottom, left/right */
+  min-width: 110x;            /* ensures width > height */
+  height: 40px;                /* fixed rectangular height */
+  box-sizing: border-box;
+  font-size: 14px;   
+  border: none;
+  border-radius: 10px;  
+  cursor: pointer;
+  transition: 0.3s;    
+}
+
+.but2:hover {
+  background-color: #4925e9; 
+}
+
+
+.but3{
+  background-color:rgb(33, 19, 226);
+  color:white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;  
+  min-width: 110;
+  height: 40px;
+  box-sizing: border-box; 
+  font-size: 14px;     
+  border: none;
+  border-radius: 10px;  
+  cursor: pointer;
+  transition: 0.3s; 
+     
+}
+
+.but3:hover {
+  background-color:#4925e9; 
+}
+body {
+  background-image: url('./assets/backimg/10302.jpg'); /* path to your image */
+  background-size: cover;       /* make image cover the entire screen */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* avoid tiling */
+  height: 100vh;                /* full screen height */
+  margin: 0;
+  padding: 0;
+}
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dice1, .dice2 {
+  transition: transform 0.3s ease;
+  font-size: 60px;
+  background: white;
+}
+
+.dice1.roll, .dice2.roll {
+  animation: roll 0.5s ease;
+}
+ 
