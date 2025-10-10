@@ -19,13 +19,13 @@ Players take turns rolling two dice — the first to reach 50 or more points win
 
 🖥️ Tech Stack
 
-React.js
+1.React.js
 
-JavaScript (ES6)
+2.JavaScript (ES6)
 
-CSS3
+3.CSS3
 
-HTML5
+4.HTML5
 
 ⚙️ Setup and Run Locally
 
@@ -47,8 +47,6 @@ npm install
 
 npm start
 
-
-5.Open in browser 👉 http://localhost:3000
 
 🧠 How to Play
 

@@ -56,11 +56,12 @@
   display: flex;
   justify-content: center;
 }
+/* Mobile responsive styles for screens <= 600px */
 @media (max-width: 600px) {
   .button {
     display: block;
     justify-content: space-around;
-    text-align: center; /* optional: still keeps button centered */
+    text-align: center; 
     margin-top: 20px;
     padding-block: 10%;
   }
@@ -73,33 +74,34 @@
 .but1{
   background-color:rgb(33, 19, 226);
   color: white;
-  display: inline-flex;         /* align content precisely */
+  display: inline-flex;        
   align-items: center;
   justify-content: center;
-  padding: 8px 20px;           /* top/bottom, left/right */
-  min-width: 100px;            /* ensures width > height */
-  height: 40px;                /* fixed rectangular height */
+  padding: 8px 20px;           
+  min-width: 100px;            
+  height: 40px;                
   box-sizing: border-box;
   font-size: 14px;
   border: none;
-  border-radius: 10px;  /* Rounded corners */
+  border-radius: 10px; 
   cursor: pointer;
-  transition: 0.3s;    /* Smooth hover effect */
+   /* Smooth hover effect */
+  transition: 0.3s;   
   margin-block: 8%;
 }
 
 .but1:hover {
-  background-color: #4925e9; /* Color change on hover */
+  background-color: #4925e9;
 }
 .but2{
   background-color:rgb(33, 19, 226);
   color:white;
-  display: inline-flex;         /* align content precisely */
+  display: inline-flex;         
   align-items: center;
   justify-content: center;
-  padding: 8px 20px;           /* top/bottom, left/right */
-  min-width: 110x;            /* ensures width > height */
-  height: 40px;                /* fixed rectangular height */
+  padding: 8px 20px;           
+  min-width: 110x;            
+  height: 40px;                
   box-sizing: border-box;
   font-size: 14px;   
   border: none;
@@ -136,14 +138,15 @@
   background-color:#4925e9; 
 }
 body {
-  background-image: url('./assets/backimg/10302.jpg'); /* path to your image */
-  background-size: cover;       /* make image cover the entire screen */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat; /* avoid tiling */
-  height: 100vh;                /* full screen height */
+  background-image: url('./assets/backimg/10302.jpg'); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  height: 100vh;                
   margin: 0;
   padding: 0;
 }
+/* Dice roll animation */
 @keyframes roll {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(90deg); }
