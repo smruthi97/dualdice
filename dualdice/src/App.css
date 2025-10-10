@@ -1,43 +1,31 @@
 .players { 
   display: flex;
   justify-content: space-between;
-  
-  padding-inline: 20%;
-  
+  padding-inline: 10%;
   color: white;
-  
 }
+
 .box {
-  
-  
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid rgb(52, 13, 228);
   border-radius: 10px;
-  padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-inline: 20%;
   margin-top: 2%;
-
-
-
-
+  height: 60vh;
 }
 .heading{
   display:flex;
-  justify-content: space-between;
-  padding-inline: 44%;
+  justify-content: center;
   color: white;
   margin-bottom: 4%;
 }
- .dice{
+.dice{
   display: flex;
-  justify-content: space-between;
-  padding-inline: 35%;
-  /* margin-bottom: 35px; /* <-- adds space below dice  */
-
-
+  justify-content: space-around;
+  margin-inline: 30%;
 }
 .dice1{
   width:90px;
@@ -66,14 +54,20 @@
 }
 .button{
   display: flex;
-  justify-content: space-between;
-  padding-inline: 26%;
-  margin-top: 50px;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .button {
+    display: block;
+    justify-content: space-around;
+    text-align: center; /* optional: still keeps button centered */
+    margin-top: 20px;
+    padding-block: 10%;
+  }
 }
 .button2{
   display: flex;
-  justify-content: space-between;
-  padding-inline: 44%;
+  justify-content: center;
   margin-top: 3%;
 }
 .but1{
@@ -91,6 +85,7 @@
   border-radius: 10px;  /* Rounded corners */
   cursor: pointer;
   transition: 0.3s;    /* Smooth hover effect */
+  margin-block: 8%;
 }
 
 .but1:hover {
@@ -110,7 +105,9 @@
   border: none;
   border-radius: 10px;  
   cursor: pointer;
-  transition: 0.3s;    
+  transition: 0.3s;
+  margin-left: 1%; 
+  margin-block: 8%;
 }
 
 .but2:hover {
@@ -133,7 +130,6 @@
   border-radius: 10px;  
   cursor: pointer;
   transition: 0.3s; 
-     
 }
 
 .but3:hover {
@@ -165,4 +161,3 @@ body {
 .dice1.roll, .dice2.roll {
   animation: roll 0.5s ease;
 }
- 
